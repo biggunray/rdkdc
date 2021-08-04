@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <node 
+      pkg="rdkdc" 
+      type="trajectory"
+      name="trajectory"  
+      output="screen" >
+  </node>
+  
+  <node
+      name="rviz" 
+      pkg="rviz"
+      type="rviz"
+      args="-d $(find rdkdc)/rdkdc.rviz" required="true" >
+  </node>
+  
+</launch>
